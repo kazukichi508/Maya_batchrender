@@ -1,0 +1,34 @@
+{
+  "image_presets": {
+    "HD_540": {
+      "width": 960,
+      "height": 540
+    },
+    "HD_720": {
+      "width": 1280,
+      "height": 720
+    },
+    "HD_1080": {
+      "width": 1920,
+      "height": 1080
+    },
+    "2k film": {
+      "width": 2048,
+      "height": 1080
+    },
+    "harf 2k film": {
+      "width": 1024,
+      "height": 540
+    }
+  },
+  "image_formats": [
+    "exr",
+    "jpeg",
+    "png",
+    "tiff"
+  ],
+  "render_engines": [
+    "CPU",
+    "GPU"
+  ]
+}
