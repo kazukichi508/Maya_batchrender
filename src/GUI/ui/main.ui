@@ -228,6 +228,9 @@
                    <property name="text">
                     <string>シーンごとのフレームレンジでとる</string>
                    </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
                   </widget>
                  </item>
                 </layout>
@@ -415,9 +418,15 @@
        </layout>
       </item>
       <item>
-       <widget class="QPushButton" name="AOV_pushButton">
+       <widget class="QCheckBox" name="aov_checkBox">
         <property name="text">
-         <string>AOV設定</string>
+         <string>aov</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
