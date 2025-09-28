@@ -42,9 +42,19 @@ if __name__ == "__main__":
     model.load_presets_from_file(PRESETS_FILE)
     model.apply_default_settings()
     
+
     # メインウィンドウにビューをセット
     main_window.setCentralWidget(view)
     main_window.resize(view.ui.size())
+
+    # 画面中央にウィンドウを移動
+    screen = app.primaryScreen()
+    screen_geometry = screen.availableGeometry()
+    window_geometry = main_window.frameGeometry()
+    center_point = screen_geometry.center()
+    window_geometry.moveCenter(center_point)
+    main_window.move(window_geometry.topLeft())
+
     main_window.show()
 
     sys.exit(app.exec())
